@@ -1,0 +1,236 @@
+@media (min-width: 576px) {
+   .territory {
+      &__item-link {
+         font-size: 17px;
+         line-height: 23px;
+         margin-bottom: 22px;
+      }
+   }
+}
+
+@media (min-width: 720px) {
+   body {
+      font-size: 20px;
+      line-height: 27px;
+   }
+   .section-page {
+      padding: 45px 0;
+   }
+   .title {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 60px;
+   }
+   .menu {
+      &__list {
+         margin-left: auto;
+         display: flex;
+         margin-right: 40px;
+         transform: none;
+      }
+      &__list-item + .menu__list-item {
+         margin-left: 64px;
+      }
+      &__top-tel {
+         display: block;
+         padding: 13px 52px;
+         width: 100%;
+      }
+      &__btn {
+         display: none;
+      }
+   }
+   .header {
+      &__top {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      &__inner-title {
+         font-size: 48px;
+         line-height: 56px;
+      }
+      &__main {
+         padding: 30px 0;
+      }
+      &__img {
+         position: absolute;
+         right: -300px;
+         top: 139px;
+      }
+      &__inner {
+         padding: 60px 0;
+         width: 51%;
+      }
+      &__inner-text {
+         max-width: 80%;
+      }
+      &__inner-buttons {
+         margin-top: 65px;
+         display: flex;
+      }
+      &__inner-btn + .header__inner-btn {
+         margin-left: 21px;
+         margin-top: 0;
+      }
+   }
+   .gallery {
+      &__slider-sm.slick-slider {
+         display: block;
+      }
+      &__items {
+         display: flex;
+         flex-wrap: wrap;
+         margin: 0 -15px;
+         margin-bottom: 33px;
+      }
+      &__item img {
+         width: 170px;
+         height: 170px;
+         margin: 0 15px;
+      }
+   }
+   .gift {
+      &__title {
+         font-size: 48px;
+         font-weight: 500;
+         line-height: 56px;
+         margin-bottom: 37px;
+      }
+   }
+   .questions {
+      &__item-title {
+         font-size: 24px;
+         line-height: 28px;
+      }
+      .questions__item {
+         padding: 43px;
+      }
+   }
+   .reviews {
+      &__text-info {
+         border-right: 1px solid #ffffff;
+      }
+      &__slider-text {
+         padding: 44px 56px 36px;
+      }
+      &__text-title {
+         margin-bottom: 38px;
+      }
+   }
+   .footer {
+      &__columns {
+         display: flex;
+      }
+      &__column {
+         width: 25%;
+      }
+      &__column-item {
+         font-size: 16px;
+         line-height: 19px;
+         margin-bottom: 15px;
+      }
+      &__title {
+         padding-top: 100px;
+         font-size: 64px;
+         line-height: 75px;
+         margin-bottom: 68px;
+      }
+   }
+}
+
+@media (min-width: 960px) {
+   .menu {
+      &__list {
+         margin-left: auto;
+         display: flex;
+         margin-right: 122px;
+         transform: none;
+      }
+   }
+   .header {
+      &__img {
+         position: absolute;
+         right: -110px;
+         top: 139px;
+      }
+   }
+   .about {
+      &__wrapper {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+      }
+      &__item:first-child {
+         order: 1;
+      }
+   }
+   .territory {
+      &__items {
+         display: flex;
+         margin: 0 -15px;
+      }
+      &__item {
+         width: 33.33%;
+         margin: 0 15px;
+      }
+   }
+   .gallery {
+      &__slider-sm {
+         display: block;
+         margin-bottom: 28px;
+      }
+   }
+   .gift {
+      &__slider.slick-slider {
+         display: none;
+      }
+      &__items {
+         display: flex;
+         justify-content: space-between;
+         margin: 0 -15px;
+         margin-bottom: 25px;
+      }
+      &__item {
+         max-width: 30%;
+         display: flex;
+         padding: 0;
+         margin: 0 15px;
+         text-align: left;
+      }
+      &__item-img {
+         margin-right: 40px;
+      }
+      &__text {
+         margin-bottom: 80px;
+      }
+   }
+   .reviews {
+      &__slider {
+         display: flex;
+         justify-content: space-between;
+         min-height: 520px;
+         margin: 0 -15px;
+      }
+      &__slider-img,
+      &__slider-text {
+         width: 50%;
+         margin: 0 15px;
+      }
+   }
+}
+
+@media (min-width: 1140px) {
+   .header {
+      &__inner-text {
+         max-width: 100%;
+      }
+   }
+   .footer {
+      &__img {
+         position: absolute;
+         top: 0;
+         right: -235px;
+      }
+   }
+}
