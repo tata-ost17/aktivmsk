@@ -16,7 +16,6 @@ $(function(){
             breakpoint: 720,
             settings: {
                arrows: true,
-               centerMode: true,
             }
          },
          
@@ -33,7 +32,7 @@ $(function(){
       fade: true,
       responsive: [
          {
-            breakpoint: 720,
+            breakpoint: 1140,
             settings: {
                arrows: false,
                centerMode: true,

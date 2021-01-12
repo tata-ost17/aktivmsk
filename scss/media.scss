@@ -5,6 +5,45 @@
          line-height: 23px;
          margin-bottom: 22px;
       }
+      &__item-inner {
+         padding: 0px 55px 23px;
+      }
+      &__item-title {
+         padding: 34px 10px 0 55px;
+         font-size: 24px;
+         line-height: 33px;
+         margin-bottom: 10px;
+      }
+      &__item-link {
+         font-size: 14px;
+         line-height: 20px;
+         margin-bottom: 22px;
+      }
+      &__item-link:nth-child(2),
+      &__item-link:nth-child(4),
+      &__item-link:nth-child(6) {
+         font-size: 20px;
+         line-height: 27px;
+         margin-bottom: 9px;
+      }
+      &__item-link a {
+         font-size: 16px;
+         line-height: 22px;
+      }
+   }
+   .gallery {
+      &__item-lg {
+         .gallery__video-btn,
+         .gallery__video-btn--sm {
+            width: 148px;
+            height: 148px;
+         }
+      }
+   }
+   .questions {
+      &__item {
+         padding: 19px 16px;
+      }
    }
 }
 
@@ -18,7 +57,7 @@
    }
    .title {
       font-size: 30px;
-      line-height: 35px;
+      line-height: 36px;
       margin-bottom: 60px;
    }
    .menu {
@@ -48,7 +87,7 @@
       }
       &__inner-title {
          font-size: 48px;
-         line-height: 56px;
+         line-height: 57px;
       }
       &__main {
          padding: 30px 0;
@@ -100,6 +139,7 @@
    }
    .questions {
       &__item-title {
+         font-weight: 400;
          font-size: 24px;
          line-height: 28px;
       }
@@ -118,12 +158,21 @@
          margin-bottom: 38px;
       }
    }
+   .reservation {
+      &__btn {
+         margin-bottom: 20px;
+         .control-button {
+            padding: 12px 55px;
+         }
+      }
+   }
    .footer {
       &__columns {
          display: flex;
       }
       &__column {
          width: 25%;
+         margin-right: 10px;
       }
       &__column-item {
          font-size: 16px;
@@ -160,6 +209,11 @@
          display: flex;
          flex-direction: row;
          justify-content: space-between;
+      }
+      &__item {
+         & + .about__item {
+            margin-left: 30px;
+         }
       }
       &__item:first-child {
          order: 1;
@@ -205,6 +259,14 @@
          margin-bottom: 80px;
       }
    }
+}
+
+@media (min-width: 1140px) {
+   .header {
+      &__inner-text {
+         max-width: 100%;
+      }
+   }
    .reviews {
       &__slider {
          display: flex;
@@ -217,13 +279,18 @@
          width: 50%;
          margin: 0 15px;
       }
-   }
-}
-
-@media (min-width: 1140px) {
-   .header {
-      &__inner-text {
-         max-width: 100%;
+      &__slider-text .slick-btn {
+         position: absolute;
+         bottom: 36px;
+         border: none;
+         background-color: transparent;
+         z-index: 5;
+         margin: 0 4px;
+         outline: none;
+         cursor: pointer;
+      }
+      &__slider-text .slick-prev {
+         left: 40%;
       }
    }
    .footer {

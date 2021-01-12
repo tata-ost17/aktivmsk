@@ -32,7 +32,7 @@ a {
 .container {
    max-width: 1200px;
    padding: 0 15px;
-   margin: auto;
+   margin: 0 auto;
 }
 
 .container--sm {
@@ -49,6 +49,7 @@ a {
 }
 
 .control-button {
+   font-family: "Roboto", sans-serif;
    color: #fff;
    padding: 13px 0px;
    background: #3750d0;
@@ -78,9 +79,9 @@ a {
    &__inner-btn {
       font-size: 17px;
       line-height: 20px;
-      width: 100%;
-      //width: 224px;
-      height: 52px;
+      width: 224px;
+      padding: 15px 20px;
+      margin: 0 auto;
       border: 1px solid #3750d0;
       border-radius: 6px;
       display: flex;
@@ -117,7 +118,7 @@ a {
       text-align: end;
       padding-top: 15px;
       display: block;
-      transform: translateY(-140%);
+      transform: translateY(-240%);
       transition: all 0.3s ease-in;
    }
    &__list.menu__list--active {
@@ -190,11 +191,6 @@ a {
    &__item:first-child {
       order: 2;
    }
-   &__item {
-      & + .about__item {
-         margin-left: 30px;
-      }
-   }
    &__item-line {
       display: flex;
    }
@@ -237,34 +233,37 @@ a {
       margin-bottom: 16px;
    }
    &__item-inner {
-      padding: 0px 55px 23px;
+      padding: 0px 15px 23px;
    }
    &__item-title {
-      padding: 34px 10px 0 55px;
-      font-size: 24px;
-      line-height: 33px;
-      margin-bottom: 10px;
+      padding: 34px 10px 0 15px;
+      font-size: 17px;
+      line-height: 23px;
+      margin-bottom: 8px;
    }
    &__item-link {
       font-size: 14px;
-      line-height: 20px;
-      margin-bottom: 22px;
+      line-height: 19px;
+      margin-bottom: 16px;
+      font-weight: 300;
    }
    &__item-link a {
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 12px;
+      line-height: 16px;
       color: #1d8fe1;
       text-decoration: underline;
+      font-weight: 400;
    }
    &__item-link:nth-child(2),
    &__item-link:nth-child(4),
    &__item-link:nth-child(6) {
       font-weight: 600;
-      font-size: 20px;
-      line-height: 27px;
-      margin-bottom: 9px;
+      font-size: 17px;
+      line-height: 23px;
+      margin-bottom: 5px;
    }
    &__btn {
+      font-family: "Roboto", sans-serif;
       font-size: 17px;
       line-height: 20px;
       width: 100%;
@@ -298,7 +297,7 @@ a {
       }
    }
    &__item-lg {
-      padding-bottom: 52.9%;
+      padding-bottom: 58.9%;
       position: relative;
    }
    &__video {
@@ -313,8 +312,8 @@ a {
    }
    &__video-btn,
    &__video-btn--sm {
-      width: 148px;
-      height: 148px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
       background-color: #fff;
       display: flex;
@@ -325,6 +324,7 @@ a {
       outline: none;
       transform: translateY(-50%);
       img {
+         width: 50%;
          transform: translateX(15%);
       }
    }
@@ -344,19 +344,27 @@ a {
       height: 100%;
       object-fit: cover;
    }
+   &__slider-lg .slick-btn {
+      position: absolute;
+      bottom: 50%;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      z-index: 5;
+      transform: translateY(-50%);
+      img {
+         transform: translateY(50%);
+      }
+   }
+   &__slider-lg .slick-prev {
+      left: -15px;
+   }
+   &__slider-lg .slick-next {
+      right: -15px;
+   }
    &__slider-sm {
       display: none;
    }
-}
-
-.gallery__slider-lg.slick-btn {
-   bottom: 50%;
-}
-.gallery__slider-lg.slick-prev {
-   left: -21px;
-}
-.gallery__slider-lg.slick-next {
-   right: -11px;
 }
 
 .gift {
@@ -446,7 +454,9 @@ a {
       text-align: center;
       margin-bottom: 20px;
       .control-button {
-         padding: 12px 55px;
+         font-size: 20px;
+         line-height: 23px;
+         padding: 12px 15px;
       }
    }
 }
@@ -455,19 +465,22 @@ a {
    &__item-title {
       font-size: 14px;
       line-height: 20px;
+      font-weight: 300;
       color: #000000;
+      width: 70%;
    }
    &__item {
-      padding: 19px 16px;
+      padding: 19px 0px;
       border-bottom: 1px solid #c4c4c4;
    }
    &__item-trigger {
       display: flex;
       justify-content: space-between;
-      text-align: center;
+      text-align: left;
       cursor: pointer;
       transition: 0.4s;
       outline: none;
+      position: relative;
    }
    &__line {
       width: 25px;
@@ -490,6 +503,12 @@ a {
       height: 1px;
       width: 100%;
    }
+   &__box {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+   }
    &__item--active .questions__item-text {
       display: block;
    }
@@ -500,8 +519,8 @@ a {
 
 .reviews {
    &__slider {
-      min-height: 520px;
-      margin: 0 -15px;
+      display: block;
+      //min-height: 520px;
    }
    &__slider-img,
    &__slider-text {
@@ -517,23 +536,17 @@ a {
    &__text-info {
       letter-spacing: 0.9px;
    }
-
    &__text-title {
       margin-bottom: 16px;
    }
-   .slick-btn {
+   &__slider-img .slick-btn {
       position: absolute;
-      bottom: 36px;
+      bottom: 50%;
       border: none;
+      outline: none;
       background-color: transparent;
       z-index: 5;
-      margin: 0 4px;
-      outline: none;
-      cursor: pointer;
-   }
-
-   .slick-prev {
-      left: 237px;
+      transform: translateY(-50%);
    }
 }
 
