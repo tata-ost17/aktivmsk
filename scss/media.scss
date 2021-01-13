@@ -30,6 +30,10 @@
          font-size: 16px;
          line-height: 22px;
       }
+      &__item-text {
+         font-size: 17px;
+         line-height: 23px;
+      }
    }
    .gallery {
       &__item-lg {
@@ -111,6 +115,21 @@
       &__inner-btn + .header__inner-btn {
          margin-left: 21px;
          margin-top: 0;
+      }
+   }
+   .about {
+      &__item {
+         width: 50%;
+      }
+      &__item-box {
+         width: 170px;
+         height: 110px;
+      }
+      &__item-box--first {
+         display: none;
+      }
+      &__item-box--second {
+         display: block;
       }
    }
    .gallery {
@@ -209,14 +228,16 @@
          display: flex;
          flex-direction: row;
          justify-content: space-between;
+         margin: 0 -15px;
       }
       &__item {
-         & + .about__item {
-            margin-left: 30px;
-         }
+         margin: 0 15px;
+         // & + .about__item {
+         //    margin-left: 30px;
+         // }
       }
       &__item:first-child {
-         order: 1;
+         //order: 1;
       }
    }
    .territory {
@@ -265,6 +286,16 @@
    .header {
       &__inner-text {
          max-width: 100%;
+      }
+   }
+   .about {
+      &__item-num {
+         font-size: 40px;
+         line-height: 47px;
+      }
+      &__item-info {
+         font-size: 17px;
+         line-height: 28px;
       }
    }
    .reviews {

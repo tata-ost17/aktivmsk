@@ -175,8 +175,23 @@ a {
       flex-direction: column;
       justify-content: space-between;
    }
+   &__item{
+      width: 100%;
+      &:not(:last-child){
+         margin-bottom: 20px;
+      }
+   }
+   &__item-map{
+      overflow: hidden;
+   }
+   &__item-box--first {
+      display: block;
+   }
+   &__item-box--second {
+      display: none;
+   }
    &__item-title {
-      font-weight: 500;
+      font-weight: 400;
       font-size: 30px;
       line-height: 35px;
       margin-bottom: 16px;
@@ -189,14 +204,14 @@ a {
       margin-bottom: 44px;
    }
    &__item:first-child {
-      order: 2;
+      //order: 2;
    }
    &__item-line {
       display: flex;
    }
    &__item-box {
-      width: 170px;
-      height: 110px;
+      width: 128px;
+      height: 91px;
       background: #ffffff;
       border: 1px solid rgba(223, 223, 223, 0.17);
       box-shadow: 0px 3px 6px rgba(95, 95, 95, 0.07);
@@ -211,12 +226,12 @@ a {
       }
    }
    &__item-num {
-      font-size: 40px;
-      line-height: 47px;
+      font-size: 30px;
+      line-height: 35px;
    }
    &__item-info {
-      font-size: 17px;
-      line-height: 28px;
+      font-size: 14px;
+      line-height: 16px;
    }
 }
 
@@ -231,6 +246,14 @@ a {
       box-shadow: 0px 3px 9px rgba(95, 95, 95, 0.11);
       border-radius: 10px;
       margin-bottom: 16px;
+   }
+   &__item-descr {
+      display: none;
+      & .territory__item-descr--active {
+         .territory__item-descr {
+            display: block;
+         }
+      }
    }
    &__item-inner {
       padding: 0px 15px 23px;
@@ -261,6 +284,11 @@ a {
       font-size: 17px;
       line-height: 23px;
       margin-bottom: 5px;
+   }
+   &__item-text {
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 60px;
    }
    &__btn {
       font-family: "Roboto", sans-serif;
@@ -548,10 +576,10 @@ a {
       z-index: 5;
       transform: translateY(-50%);
    }
-   &__slider-img .slick-prev{
-left: -15px;
+   &__slider-img .slick-prev {
+      left: -15px;
    }
-   &__slider-img .slick-next{
+   &__slider-img .slick-next {
       right: -15px;
    }
 }
