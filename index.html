@@ -9,6 +9,8 @@
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -29,7 +31,7 @@
                      <a class="menu__list-link" href="#">Маршруты</a>
                   </li>
                </ul>
-               <a class="menu__top-tel control-button" href="#">
+               <a class="menu__top-tel control-button" href="#" data-fancybox data-src="#popup-call">
                   Обратный звонок
                </a>
             </nav>
@@ -138,7 +140,7 @@
             Где и как будем кататься
          </h3>
          <div class="territory__items">
-            <div class="territory__item">
+            <div class="territory__item" data-fancybox data-src="#popup1">
                <h5 class="territory__item-title">
                   Маршрут “Активный”
                </h5>
@@ -173,7 +175,7 @@
                   <a class="territory__btn control-button" href="#">В подарок</a>
                </div>
             </div>
-            <div class="territory__item territory__item-descr">
+            <div class="territory__item territory__item-descr" id="popup1">
                <h5 class="territory__item-title">
                   Маршрут “Активный”
                </h5>
@@ -197,7 +199,7 @@
                   <a class="territory__btn control-button" href="#">В подарок</a>
                </div>
             </div>
-            <div class="territory__item">
+            <div class="territory__item" data-fancybox data-src="#popup2">
                <h5 class="territory__item-title">
                   Маршрут “Прогулочный”
                </h5>
@@ -232,7 +234,31 @@
                   <a class="territory__btn control-button" href="#">В подарок</a>
                </div>
             </div>
-            <div class="territory__item">
+            <div class="territory__item territory__item-descr" id="popup2">
+               <h5 class="territory__item-title">
+                  Маршрут “Прогулочный”
+               </h5>
+               <div class="territory__item-inner">
+                  <ul class="territory__item-list">
+                     <li class="territory__item-link">
+                        <a href="#">Скрыть описание</a>
+                     </li>
+                     <li class="territory__item-text">
+                        <p>
+                           Тут большое хорошее понятное описание. Тут большое хорошее понятное описание. Тут большое
+                           хорошее понятное описание. Тут
+                           большое хорошее понятное описание. Тут большое хорошее понятное описание. Тут большое хорошее
+                           понятное описание. Тут
+                           большое хорошее понятное описание. Тут большое хорошее понятное описание. Тут большое хорошее
+                           понятное описание.
+                        </p>
+                     </li>
+                  </ul>
+                  <a class="territory__btn control-button" href="#">Получить бронь</a>
+                  <a class="territory__btn control-button" href="#">В подарок</a>
+               </div>
+            </div>
+            <div class="territory__item" data-fancybox data-src="#popup3">
                <h5 class="territory__item-title">
                   Маршрут “Бодрый”
                </h5>
@@ -261,6 +287,30 @@
                      </li>
                      <li class="territory__item-link">
                         <a href="#">Показать еще 4 адреса</a>
+                     </li>
+                  </ul>
+                  <a class="territory__btn control-button" href="#">Получить бронь</a>
+                  <a class="territory__btn control-button" href="#">В подарок</a>
+               </div>
+            </div>
+            <div class="territory__item territory__item-descr" id="popup3">
+               <h5 class="territory__item-title">
+                  Маршрут “Бодрый”
+               </h5>
+               <div class="territory__item-inner">
+                  <ul class="territory__item-list">
+                     <li class="territory__item-link">
+                        <a href="#">Скрыть описание</a>
+                     </li>
+                     <li class="territory__item-text">
+                        <p>
+                           Тут большое хорошее понятное описание. Тут большое хорошее понятное описание. Тут большое
+                           хорошее понятное описание. Тут
+                           большое хорошее понятное описание. Тут большое хорошее понятное описание. Тут большое хорошее
+                           понятное описание. Тут
+                           большое хорошее понятное описание. Тут большое хорошее понятное описание. Тут большое хорошее
+                           понятное описание.
+                        </p>
                      </li>
                   </ul>
                   <a class="territory__btn control-button" href="#">Получить бронь</a>
@@ -666,6 +716,24 @@
          <img src="images/image-1.png" alt="">
       </picture>
    </footer>
+
+      <div id="popup-call" class="modal" style="display: none;">
+         <div class="modal__title">
+            Заказать
+            <span>обратный звонок</span>
+         </div>
+         <form>
+            <label>
+               <input type="text" placeholder="Ваше имя" required>
+            </label>
+            <label>
+               <input type="tel" placeholder="Ваш телефон" required>
+            </label>
+            <button class="control-button" type="submit">
+               Заказать звонок
+            </button>
+         </form>
+      </div>
 
    <script src="js/main.min.js"></script>
 </body>

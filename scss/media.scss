@@ -249,6 +249,9 @@
          width: 33.33%;
          margin: 0 15px;
       }
+      &__item-descr {
+         width: 33.33%;
+      }
    }
    .gallery {
       &__slider-sm {
@@ -330,5 +333,44 @@
          top: 0;
          right: -235px;
       }
+   }
+}
+
+.modal {
+   font-family: "Quicksand", sans-serif;
+   &.fancybox-content {
+      max-width: 540px;
+      text-align: center;
+      padding: 33px;
+   }
+   &__title {
+      font-size: 38px;
+      line-height: 47px;
+      margin-bottom: 62px;
+      span {
+         display: block;
+      }
+   }
+   input {
+      display: block;
+      padding: 16px 20px;
+      margin-bottom: 15px;
+      border: 1px solid #3750d0;
+      border-radius: 3px;
+      width: 100%;
+      &::placeholder {
+         font-weight: 300;
+         color: #9f9f9f;
+         font-size: 13px;
+         line-height: 16px;
+      }
+   }
+   .control-button {
+      padding: 13px 25px;
+      margin-top: 40px;
+   }
+   .fancybox-button svg {
+      display: none;
+      margin-top: 0;
    }
 }
